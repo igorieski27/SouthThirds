@@ -1,0 +1,17 @@
+{
+    "name" : " SouthThirds",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description" : "Some descp here",
+    "browser_action":{
+        "default_title":"SouthThirds",
+        "default_popup":"index.html"
+    },
+    "content_scripts" : [
+        {
+            "js" : ["init.js"],
+            "css": ["style.css"],
+            "matches" : ["*://www.youtube.com/*"]
+        }
+    ]
+}
